@@ -9,38 +9,52 @@
 <body>
 
 <h2>anasig</h2>
-<p>anasig je prototyp signálové analyzátoru. Je napsán v jazyce Python. Jeho uživatelské rozhraní (GUI) je tvořeno pomocí knihovny Qt. Používá řadu rozšiřujících modulů - Numeric, <a href="http://www.scipy.org">SciPy</a> a <a href="http://matplotlib.sourcefoge.net">matplotlib</a>. Při návrhu jsem vycházel z uživatelského rozhraní programů podobného typu (např. LabShop PULSE od firmy Brüel&Kjær, Signal Analyser). Program využívá architektury MDI (Multiple Document Interface) a jeho rozhraní je tvořeno několika okny, které slouží k práci s nástroji (Instrument organiser), signály (Signal organiser) nebo slouží k zobrazování grafů (Charts) a vlastností (Properties).</p>
+<p>anasig is a prototype of a signal analyser. It is written in Python programming language.
+Its user interface (GUI) is built on Qt and it is using couple of other modules - Numeric,
+<a href="http://www.scipy.org">SciPy</a> a <a href="http://matplotlib.sourcefoge.net">matplotlib</a>.
 
-<h3>Hlavní okno programu</h3>
-<p>Hlavní okno programu je tvořeno již zmíněnými organizéry.</p>
-<img src="images/anasig01.png" alt="Hlavní okno programu">
+Some of ideas used have been inspired by similar programs (e.g. LabShop PULSE from firmy Brüel&Kjær company, Signal Analyser from prof. Jiří Tůma) using the design of the anasig.
+The anasig application is using the MDI (Multiple Document Interface) architecture and the GUI consists of couple of windows, 
+which are used for working with instruments (Instrument organiser), signals (Signal organiser) or are used for displaying graphs or properties.
+</p>
+
+<h3>Main program window</h3>
+<p>Main program window includes Organisers</p>
+<img src="images/anasig01.png" alt="Main program window">
 
 
-<h3>Organizér nástrojů</h3>
-<p>V současné době je k implementováno pouze několik základních nástrojů:</p>
+<h3>Instrument organiser</h3>
+<p>Currently, following tools are implemented in anasig:</p>
 <ul>
-    <li>FFT analyzátor</li>
-    <li>LTI systém (lineární t-invariantní systém)</li>
-    <li>Kalmanův filtr</li>
-    <li>FIR filtr</li>
+    <li>FFT analyser</li>
+    <li>LTI system (linear t-invariant system)</li>
+    <li>Kalman filter</li>
+    <li>FIR (Finite Impulse Response) filter</li>
 </ul>
 
-<h3>Organizér signálů</h3>
-<p>Organizér signálů slouží k práci se signály. V tomto okně se také objevují signály vzniklé jako výstup nástrojů. Lze také načítat signály ze souborů kompatibilních s formátem programu MATLAB, modulu <em>pickle</em> pro Python souborů a WAV soubory. Dále je možno generovat několik základních typů signálů:</p>
+<h3>Signal organiser</h3>
+<p>
+
+Signal organiser is a tool to store and work with signals. There are also appearing the newly created signals from the intruments (after processing) in this signal organiser window.
+It is also possible to import signals from files compatible with the MATLAB format, Python's pickle module and WAV files.
+User can also use a built-in signal generator which supports following basic signal types:</p>
 <ul>
-    <li>sinusový</li>
-    <li>bílý šum</li>
-    <li>konstantní hodnota</li>
+    <li>constant</li>
+    <li>sinus</li>
+    <li>white noise</li>
 </ul>
 
-<h3>Výstupy programu</h3>
-<p>může být např. graf v publikační kvalitě získaný pomocí knihovny matplotlib. Tato knihovna je schopna grafy exportovat ve formátu SVG (Scalable Vectror Graphic). Díky tomuto formátu lze obrázek otevřít v libovolném grafickém editoru který tento formát podporuje (např. Inkscape) a provést dodatečné úpravy:</p>
-<img src="images/anasig02.png" alt="vykreslený graf">
-<!--<img src="images/anasig03.png" alt="editace v Inkscape">-->
+<h3>Application outputs</h3>
+<p>Application is able to export a publication quality graphs using matplotlib library in several bitmap or vector formats as for example SVG (Scalable Vectror Graphic).
+Therefore the user can edit the result image in its favourite graphics editor (e.g. Inkscape) and make some additional changes</p>
 
-<h3>Další vlastnosti</h3>
-<p>U všech nástrojů a signálů lze nastavovat řadu vlastností, které se liší dle charakteru daného objektu. Příklad nastavení dynamiky pomocí zadání matice stavového popisu u Kalmanova filtru, který je potomkem třídy LTI, lze vidět na následujícím obrázku:</p>
-<img src="images/anasig04.png" alt="nastavení vlastností">
+<img src="images/anasig02.png" alt="example graph">
+<img src="images/anasig03.png" alt="example of Kalman filter utilization">
+
+<h3>Other features</h3>
+<p>For all built-in instruments and signals it is possible to set various number of properties which vary from one to another. An example
+of changing dynamics of Kalman filter by setting the state matrix is show on the following picture:</p>
+<img src="images/anasig04.png" alt="Properties setting">
 
 </body>
 </html>
