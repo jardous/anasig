@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-3.9.dtd">
+<!-- Project file for project anasig -->
+<!-- Saved: 2007-06-28, 13:16:42 -->
+<!-- Copyright (C) 2007 Jiri Popek,  -->
+<Project version="3.9">
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <UIType>Qt</UIType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author>Jiri Popek</Author>
+  <Email></Email>
+  <Sources>
+    <Source>
+      <Name>anasig.py</Name>
+    </Source>
+    <Source>
+      <Dir>dforms</Dir>
+      <Name>dorganiserform.py</Name>
+    </Source>
+    <Source>
+      <Dir>dforms</Dir>
+      <Name>__init__.py</Name>
+    </Source>
+    <Source>
+      <Dir>dforms</Dir>
+      <Name>dsignalproperties.py</Name>
+    </Source>
+    <Source>
+      <Dir>dforms</Dir>
+      <Name>dinstrumentproperties.py</Name>
+    </Source>
+    <Source>
+      <Dir>dforms</Dir>
+      <Name>dmainform.py</Name>
+    </Source>
+    <Source>
+      <Name>drawing.py</Name>
+    </Source>
+    <Source>
+      <Name>genvals.py</Name>
+    </Source>
+    <Source>
+      <Name>globals.py</Name>
+    </Source>
+    <Source>
+      <Name>kalmanfilter.py</Name>
+    </Source>
+    <Source>
+      <Name>properties.py</Name>
+    </Source>
+    <Source>
+      <Name>pdebug.py</Name>
+    </Source>
+    <Source>
+      <Name>stateconf.py</Name>
+    </Source>
+    <Source>
+      <Name>anasigError.py</Name>
+    </Source>
+    <Source>
+      <Name>dmain.py</Name>
+    </Source>
+    <Source>
+      <Name>dinstrumentproperties.py</Name>
+    </Source>
+    <Source>
+      <Name>dmainformbase.py</Name>
+    </Source>
+    <Source>
+      <Name>signals_base.py</Name>
+    </Source>
+    <Source>
+      <Dir>plugin</Dir>
+      <Name>signal_sin.py</Name>
+    </Source>
+    <Source>
+      <Dir>plugin</Dir>
+      <Name>signal_noise.py</Name>
+    </Source>
+    <Source>
+      <Name>instruments_base.py</Name>
+    </Source>
+    <Source>
+      <Name>instruments.py</Name>
+    </Source>
+    <Source>
+      <Name>signals.py</Name>
+    </Source>
+    <Source>
+      <Name>instrumentorganizer.py</Name>
+    </Source>
+    <Source>
+      <Name>organizer.py</Name>
+    </Source>
+    <Source>
+      <Name>signalorganizer.py</Name>
+    </Source>
+    <Source>
+      <Name>itempickling.py</Name>
+    </Source>
+  </Sources>
+  <Forms>
+    <Form>
+      <Dir>dforms</Dir>
+      <Name>dmainform.ui</Name>
+    </Form>
+    <Form>
+      <Dir>dforms</Dir>
+      <Name>dorganiserform.ui</Name>
+    </Form>
+  </Forms>
+  <Translations>
+    <Translation>
+      <Name>anasig_cs.ts</Name>
+    </Translation>
+    <Translation>
+      <Name>anasig_cs.ts</Name>
+    </Translation>
+    <Translation>
+      <Name>anasig_cs.ts</Name>
+    </Translation>
+    <Translation>
+      <Name>anasig_cs.ts</Name>
+    </Translation>
+  </Translations>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+    <Other>
+      <Name>anasig.pro</Name>
+    </Other>
+  </Others>
+  <MainScript>
+    <Name>anasig.py</Name>
+  </MainScript>
+  <Vcs>
+    <VcsType>Subversion</VcsType>
+    <VcsOptions>(dp0
+S'status'
+p1
+(lp2
+S''
+p3
+asS'log'
+p4
+(lp5
+g3
+asS'global'
+p6
+(lp7
+g3
+asS'update'
+p8
+(lp9
+g3
+asS'remove'
+p10
+(lp11
+g3
+asS'add'
+p12
+(lp13
+g3
+asS'tag'
+p14
+(lp15
+g3
+asS'export'
+p16
+(lp17
+g3
+asS'commit'
+p18
+(lp19
+g3
+asS'diff'
+p20
+(lp21
+g3
+asS'checkout'
+p22
+(lp23
+g3
+asS'history'
+p24
+(lp25
+g3
+as.</VcsOptions>
+    <VcsOtherData>(dp0
+S'standardLayout'
+p1
+I1
+s.</VcsOtherData>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+  </FiletypeAssociations>
+</Project>

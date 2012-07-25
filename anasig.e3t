@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Tasks SYSTEM "Tasks-3.8.dtd">
+<!-- Tasks file for project anasig -->
+<!-- Saved: 2007-08-25, 18:11:41 -->
+<Tasks version="3.8">
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: mix signals</Description>
+    <Created>2006-09-30, 17:42:08</Created>
+    <Resource>
+      <Filename>
+        <Name>signals.py</Name>
+      </Filename>
+      <Linenumber>158</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: get_dataX called twice - possible speed problem</Description>
+    <Created>2006-09-30, 17:43:47</Created>
+    <Resource>
+      <Filename>
+        <Name>drawing.py</Name>
+      </Filename>
+      <Linenumber>91</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: data length check</Description>
+    <Created>2006-09-30, 19:00:48</Created>
+    <Resource>
+      <Filename>
+        <Name>signals_base.py</Name>
+      </Filename>
+      <Linenumber>66</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: really?</Description>
+    <Created>2006-09-30, 19:00:48</Created>
+    <Resource>
+      <Filename>
+        <Name>signals_base.py</Name>
+      </Filename>
+      <Linenumber>86</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: put this into instrument class</Description>
+    <Created>2007-08-25, 15:16:45</Created>
+    <Resource>
+      <Filename>
+        <Name>organizer.py</Name>
+      </Filename>
+      <Linenumber>232</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: s['fs']/float(dLinenumber)</Description>
+    <Created>2007-08-25, 17:57:28</Created>
+    <Resource>
+      <Filename>
+        <Name>instruments.py</Name>
+      </Filename>
+      <Linenumber>117</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: why m.num.tolist() returns (1,2)? - should be vector</Description>
+    <Created>2007-08-25, 17:57:28</Created>
+    <Resource>
+      <Filename>
+        <Name>instruments.py</Name>
+      </Filename>
+      <Linenumber>203</Linenumber>
+    </Resource>
+  </Task>
+  <Task priority="1" completed="0" bugfix="0">
+    <Description>TODO: change it to qxq</Description>
+    <Created>2007-08-25, 17:57:28</Created>
+    <Resource>
+      <Filename>
+        <Name>instruments.py</Name>
+      </Filename>
+      <Linenumber>423</Linenumber>
+    </Resource>
+  </Task>
+</Tasks>

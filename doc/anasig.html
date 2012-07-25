@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8">
+  <title>Python</title>
+</head>
+
+<body>
+
+<h2>anasig</h2>
+<p>anasig je prototyp signálové analyzátoru. Je napsán v jazyce Python. Jeho uživatelské rozhraní (GUI) je tvořeno pomocí knihovny Qt. Používá řadu rozšiřujících modulů - Numeric, <a href="http://www.scipy.org">SciPy</a> a <a href="http://matplotlib.sourcefoge.net">matplotlib</a>. Při návrhu jsem vycházel z uživatelského rozhraní programů podobného typu (např. LabShop PULSE od firmy Brüel&Kjær, Signal Analyser). Program využívá architektury MDI (Multiple Document Interface) a jeho rozhraní je tvořeno několika okny, které slouží k práci s nástroji (Instrument organiser), signály (Signal organiser) nebo slouží k zobrazování grafů (Charts) a vlastností (Properties).</p>
+
+<h3>Hlavní okno programu</h3>
+<p>Hlavní okno programu je tvořeno již zmíněnými organizéry.</p>
+<img src="images/anasig01.png" alt="Hlavní okno programu">
+
+
+<h3>Organizér nástrojů</h3>
+<p>V současné době je k implementováno pouze několik základních nástrojů:</p>
+<ul>
+    <li>FFT analyzátor</li>
+    <li>LTI systém (lineární t-invariantní systém)</li>
+    <li>Kalmanův filtr</li>
+    <li>FIR filtr</li>
+</ul>
+
+<h3>Organizér signálů</h3>
+<p>Organizér signálů slouží k práci se signály. V tomto okně se také objevují signály vzniklé jako výstup nástrojů. Lze také načítat signály ze souborů kompatibilních s formátem programu MATLAB, modulu <em>pickle</em> pro Python souborů a WAV soubory. Dále je možno generovat několik základních typů signálů:</p>
+<ul>
+    <li>sinusový</li>
+    <li>bílý šum</li>
+    <li>konstantní hodnota</li>
+</ul>
+
+<h3>Výstupy programu</h3>
+<p>může být např. graf v publikační kvalitě získaný pomocí knihovny matplotlib. Tato knihovna je schopna grafy exportovat ve formátu SVG (Scalable Vectror Graphic). Díky tomuto formátu lze obrázek otevřít v libovolném grafickém editoru který tento formát podporuje (např. Inkscape) a provést dodatečné úpravy:</p>
+<img src="images/anasig02.png" alt="vykreslený graf">
+<!--<img src="images/anasig03.png" alt="editace v Inkscape">-->
+
+<h3>Další vlastnosti</h3>
+<p>U všech nástrojů a signálů lze nastavovat řadu vlastností, které se liší dle charakteru daného objektu. Příklad nastavení dynamiky pomocí zadání matice stavového popisu u Kalmanova filtru, který je potomkem třídy LTI, lze vidět na následujícím obrázku:</p>
+<img src="images/anasig04.png" alt="nastavení vlastností">
+
+</body>
+</html>

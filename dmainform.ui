@@ -1,0 +1,523 @@
+<!DOCTYPE UI><UI version="3.3" stdsetdef="1">
+<class>MainForm</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>MainForm</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>633</width>
+            <height>573</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>anasig</string>
+    </property>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>Windows</cstring>
+    </property>
+    <property name="enabled">
+        <bool>true</bool>
+    </property>
+    <property name="defaultUp">
+        <bool>false</bool>
+    </property>
+    <item text="File" name="File">
+        <action name="fileNewAction"/>
+        <action name="fileOpenAction"/>
+        <action name="fileSaveAction"/>
+        <action name="fileSaveAsAction"/>
+        <separator/>
+        <action name="filePrintAction"/>
+        <separator/>
+        <action name="fileExitAction"/>
+    </item>
+    <item text="&amp;Help" name="helpMenu">
+        <action name="helpContentsAction"/>
+        <action name="helpIndexAction"/>
+        <separator/>
+        <action name="helpAboutAction"/>
+    </item>
+    <separator/>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>fileNewAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image0</iconset>
+        </property>
+        <property name="text">
+            <string>New</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;New</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+N</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileOpenAction</cstring>
+        </property>
+        <property name="on">
+            <bool>false</bool>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image1</iconset>
+        </property>
+        <property name="text">
+            <string>Open</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Open...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+O</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image2</iconset>
+        </property>
+        <property name="text">
+            <string>Save</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Save</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileSaveAsAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>Save As</string>
+        </property>
+        <property name="menuText">
+            <string>Save &amp;As...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>filePrintAction</cstring>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="iconSet">
+            <iconset>image3</iconset>
+        </property>
+        <property name="text">
+            <string>Print</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Print...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+P</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>fileExitAction</cstring>
+        </property>
+        <property name="text">
+            <string>Exit</string>
+        </property>
+        <property name="menuText">
+            <string>E&amp;xit</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editUndoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image4</iconset>
+        </property>
+        <property name="text">
+            <string>Undo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Undo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Z</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editRedoAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image5</iconset>
+        </property>
+        <property name="text">
+            <string>Redo</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Redo</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+Y</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCutAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image6</iconset>
+        </property>
+        <property name="text">
+            <string>Cut</string>
+        </property>
+        <property name="menuText">
+            <string>Cu&amp;t</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+X</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editCopyAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image7</iconset>
+        </property>
+        <property name="text">
+            <string>Copy</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Copy</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+C</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editPasteAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image8</iconset>
+        </property>
+        <property name="text">
+            <string>Paste</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Paste</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+V</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>editFindAction</cstring>
+        </property>
+        <property name="iconSet">
+            <iconset>image9</iconset>
+        </property>
+        <property name="text">
+            <string>Find</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Find...</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+F</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpContentsAction</cstring>
+        </property>
+        <property name="text">
+            <string>Contents</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Contents...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpIndexAction</cstring>
+        </property>
+        <property name="text">
+            <string>Index</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;Index...</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>helpAboutAction</cstring>
+        </property>
+        <property name="text">
+            <string>About</string>
+        </property>
+        <property name="menuText">
+            <string>&amp;About</string>
+        </property>
+        <property name="accel">
+            <string></string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>WindowsInstrumentsAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>false</bool>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>instruments</string>
+        </property>
+        <property name="menuText">
+            <string>instruments</string>
+        </property>
+        <property name="accel">
+            <string>Alt+I</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>WindowsSignalsAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>false</bool>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>signals</string>
+        </property>
+        <property name="menuText">
+            <string>signals</string>
+        </property>
+        <property name="accel">
+            <string>Alt+S</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>WindowsPropertiesAction</cstring>
+        </property>
+        <property name="toggleAction">
+            <bool>true</bool>
+        </property>
+        <property name="on">
+            <bool>false</bool>
+        </property>
+        <property name="enabled">
+            <bool>false</bool>
+        </property>
+        <property name="text">
+            <string>properties</string>
+        </property>
+        <property name="menuText">
+            <string>properties</string>
+        </property>
+        <property name="accel">
+            <string>Ctrl+P</string>
+        </property>
+    </action>
+</actions>
+<images>
+    <image name="image0">
+        <data format="PNG" length="218">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000a149444154388d6360a01160c422f69f02bd70c0844df0ffffff383103030383a18e2141076035981030343464d0d4d1c46b380b39066bea683248f248326c63d8c670fecaf9ff0c5882852c17077b063370c870e07539d6c883852536c0c8c8c8f0ffff7f86e7979f332cddbe94e1c3830f0cdb0e6f63387fe53c8a796405052323de04419ec1b87c836e1959614c0c183578d4e05183f1004a6a1062cd1b22000085ac397a4864d01a0000000049454e44ae426082</data>
+    </image>
+    <image name="image1">
+        <data format="PNG" length="237">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000b449444154388ded943b1202211044df5004867b853da49191e541bd86c156cd0680c2c2225098d9c9f07dd37400fce5250377f40b4347b8476858d3e378c4714b53313f8002604f367a5e528a07015435ec0ba08834734f0fda4f537957d749b2f59ee62632de59eb3225c76db5ae62c60359672a661c431f77582d3c37b858786df5f9f5964451812eeed2ba7848651ea080f828e639f5a0d4f10ca7f14055e7390d322e90794e13c7339d66e041cdfc76dbb403b52e92e06b7d32040000000049454e44ae426082</data>
+    </image>
+    <image name="image2">
+        <data format="PNG" length="380">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000014349444154388db595bd4ec3301485bfa00e45ea60363c3a5b175ea0529f8477e00910aaaa4e9d78079e24525606166fcd829a110f19324482c175f3e3a471a0dcc53992efb99f8eae1cf8a78a4ee7f7b57d67eeebed153203cf2f9026294a284a538280dce41775fc1073fc38529a92781d0370e38c3303ea34462e2499c960614dc6b4edb7dad59958096b0e400152c81659572f674b74a1514201b05aaf5a59b488e76e4c832cfffc628ef04875a56b0d6c37b0dff5182b016565bff3c292518012b2a5658feef60765ac2bcdddfd6d40c675bf479cb989036483badb1f9271d07674fb43320e21efcbf83cc365b4ddf8ab3356fb9d9fb1b7c74a58f3a69e720e66ec26ff565f247e7c9a940450bf35bdc46e7248a549cae1fd409aa4ad7ecfd8eda11261c693f7389478f21e87124f7e2b4289c7de8aa871f75abfa768fcca1fea0754ce1960b6585dfa0000000049454e44ae426082</data>
+    </image>
+    <image name="image3">
+        <data format="PNG" length="1011">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000003ba49444154388d8d93316c144714863f5b8b34271dd26e37dbdd50b121452ed0c44ae52e29139a4005a602a78894ced0a4a50d1da68b688c93c2722a4c7748147745b0070969df15e876a558b72bf9e49be2a497628f0b86b3c46b9ede48f3cff7fe796f8573e2b077a86528e976ba5003311475416212a8219880d4424c4c42c2a5f54b2be7699d89e707cf5555753c1aab9eaa8e4623d5d379adaae37193f33cd7fc55ae1fdf3ff795bc9fab096641eaac5b901675411aa78bba0a1557d7ae9ed15a3d4ff8a83c2244015f7a922861301c504c8a45dd1ff6a96615fd619f244a3eb9bf9478d41b69110a309098840fc9df7b4c0c55a83018aeac5df944672971880235356666905ace904b2dd086223476482d4b3b8e961dca44b0c69290d06ab7905a7071e3b18b1d55a8484de3716ad2a5c24b89339b518692103523e5da6e412ab52cc843142842b15478a9c77bbb7bbaf6d51a493b697a9a7bfa619e9a29add0a2f7a6475115b834e3eafaff5e9f21ce5fe5fa78fbb10e5f0ce9bde9319d4de90ffb4ccda7b90c25c430f00376ffdae5d7df36b9fbf35ddddbdfd333c4793fd7fd9707c413833f165c3b4526731b3ecac5ac226b67c86c0813d87df10c73dcc24f8ef8fecb75d66fad37c2f9ab5c0ffe3960e3bb0d0a2a529320a56063b7f838a905672c52979471c176fd881be606f5cb9aeda7dbc8eb663a4208b8cb5943fa787b47f5543f2b4ef55433cdd4a8d14c331de7637df8e077ed5eebaab51d8de3583bb6a3ecfcb1f3798af318eb581fea5ded6a57b774ab391ca96efdb2a5d67614d08eed6894268ea98760a65006b0061380b80535b4ec07d350426213ee958ff831166c69a9e2294529742f7f0361bbb1038806fe257164f013c14d53bc082e38c4082ea408050e87188f0b1982c79151202421c5e3b1c172f07a9f301f0403ac76da1d64d26c940f824b1c0582bb902208e9c5940221bde0f078d28b0e8f90442982276b3b240c9bcd9c4720b03a9c0d49aa80178f23c5179e94147f22a438e4a4219313df74f2afc785049934e4fed89362915a3073e1afafadb1da893a4ddb17530a0a5cd490b9c821619e8dc745731bda198260db0e1f06d876a7e9d07e4100acb5dcbe7da3212e86d07bdb83d2d03fee119796febb1e71b0f4df0d88cb98fef1803858fc3c0f8f3d1d326432c49121e511c6c0fd07f7b9fec3f59595c3dea13e79fa84677fef1326d3c6b359492b026634c45181795fb73364268b3a8d1c32f1d0366cdcbac9e6bdcd95332bbdb3bba3bb7fee53bc95c50784f07e78586c15c034400855735607badf76b9f9d34dee6cdc59e8fd0746e69619c4d373e40000000049454e44ae426082</data>
+    </image>
+    <image name="image4">
+        <data format="PNG" length="232">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000af49444154388ded93310e842010459f5b790deec535b6da6c618895d7f05e5ec38e2d2613464485d2acbf2184993f8f7c8047b755d7563e455801072c400faccca3c37ffcc6cb6ce608fe605088c9ec6c4dfdddbed967c312197c0f06cb4d2c79c144cdf3fd95b45e86bfd281922d19698da9ed171963c7361807bc1bc2d5fe9db10dc292d74afb8bc47a68c96bcdb5be48aca4ade492c934f6e765b50a438862aa6b52e3cfcb655f4f4bd08ffe533fc24b4acaec05c9490000000049454e44ae426082</data>
+    </image>
+    <image name="image5">
+        <data format="PNG" length="229">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000ac49444154388ded533b0ec3200c7d74ea35b857af6255c863a7de817be51adddc2172cd27216eb648bc05017ecf0fdb00139745680f38b1d033025800dc017c00e89eba78a7308b898cd6c74e02962e39271620cb7ab907bd7f6dc429bf739cc5ffdcf26514fa3d70b360ada907142cbe14357e211cb136ca0b0a75636b7ee338fe21dc3aadf98de3e584a83aadf93f614e65cdce381df6c8462ebff341823136468bc57e9cffa74d4c1ce30b37ab4d109cbd5d730000000049454e44ae426082</data>
+    </image>
+    <image name="image6">
+        <data format="PNG" length="228">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000ab49444154388dcd92bb0dc3300c444f41964899bdb24a2aae91527bb9d4184c613930e41374743ece358428eaf1401138481eccbf74fab091ff040fc7a0821928bd0b1e02f68217791387521dad81d29baf6d4544f21800d9b155e843860be0bcc01250ead942ee895aa76be06e782690161686f7006cc61c7edea6b203b7ceae1692bbd24af2791329bbd4784f5b87ac9e829983d2b9379f9b49523ec8862bd7e9663e3b9b1070f41b3d011a7c366008bc96020000000049454e44ae426082</data>
+    </image>
+    <image name="image7">
+        <data format="PNG" length="288">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000000e749444154388dd594bd0dc2400c469f5196489911e869188005980351852a8c411931097ba4640c535839258a9d3f48c12759a79cad77dff92e07ff26017446cd3ab0aacf16916edd22650e046cb5348a882e852770e47a2d3cb5c2736c7335d0004530dec2c53412a0508de41f0a95bbd55db22e320863176edef4e67c28f1e009acaa8330356ebed5fe0447071ede8a16d6753cccc1e56a949c92e70b6d7b3ee3563423f91c917befdb9c1bbc7350fdb0f9dacdc7075aeb0f1cc7f5ab7beca95bbf99e35deb268ae81efbb5f41c4fecb1d1358eb3892abeeef194834d1cdb4f10bd6edeb8a13e8418e9e9cfe4b19f0000000049454e44ae426082</data>
+    </image>
+    <image name="image8">
+        <data format="PNG" length="385">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b0000014849444154388db595316ec23018853fa30c8c99d97c812e6cbd4a7d8d4c80aa0a98d2853bb817ea05bcc19a812143a49fc1310d8983435b9e643dfdb6f3fee7674b81274125d6e517df0c36c54490ceac1a971cac8489a4e8a3e2b3206a0f96ed87e7be50185d44f6dfd85080d8bdc53586795652ac0a8edf475ce5d0b91ee5c5cb82725f5237053ab39895b9713d03708d41e796ba2900389d4fe85cc31974aea335e045736faa8f0c609e95b8caa0330b1896afcbd120bbd099c555fea4500c85af9d2b833d780ef554ee63d6ef1c9c3f5a47a30819c79c6cde2de0801427321e3a7188ac4773566a87c8ba7d8e9bf18c87d9d956e0ab75a6af2cf2d6d60471818dba0adfcb301cd38bc4f01343573c99f154c77df14919a71c2bf509d49da6f3bf671cbb58a576ff91710c3afd8eef398eb13f41e742c7c7561e059432e13763658ad3213f091798c6671431a2fe050000000049454e44ae426082</data>
+    </image>
+    <image name="image9">
+        <data format="PNG" length="804">89504e470d0a1a0a0000000d4948445200000016000000160806000000c4b46c3b000002eb49444154388dd5d3b16b1c4718c6e1df992be640815950b1635cec98145e99142763d0892444ebca761561175169bbb24965d2f95f3069a432b888432048a746b914e65690c0ad49e23b357763b0f05c11bc033ed8050b768b854d11c7041c710a3181bcddc0f07c2fc37cf07f4be3af87716f5cdb9796e430413615f6c8b2bc18c22244ed88b3cb671bc741c7c2dbddedda8d72b2a0e4cada3a96142d35c941cc647f8457c1c6e50dce7f7cfe44780360afbb57278f12d4879a8d8d9b0094807905fe7b05e6658eddede10e0d773ebb73a2e6cd7edcafcdbe415fef10ad5dc51419baf4300e3430983ae4b982d6471a8e3276f6774ef414a7984116c0c6da55780561e9313c0021328665462834ee078d8f447742ca19ecf5f6eab970fc6cc095cbeb180a8a0ae2c7168209468c405a4c690969619e1a025f932ee4b4d2d6fcc6aaa9f09a128f164935c4fb44e068e1e393e7022d35713e41058aa9b32c9d0919b8c17cd8e696ac5932c926e8a68771065f14b8a7101e2d31187d8fba68b1798a5f79d8a3148d9e0f6ba9b0cea284c2b88240f8186709c512835f2c5ea7855d7068a130d51f782ad2f970d12c6056be6e0a666a402a062e46f91926b794958fc90daaf2184d87441f44f3e1a81d913ceaa15018374249453eb584a28d9da64824c56c8a2f0286cf06acca25bca6371fbe105d6874649b9dddaf28a5c6388b5ef0d8cfbae4b2242f1d792619d911e581459c11c87392edee76fdfce7e7c77ebb53005edb63b9d264df760985229da5b4c310a1734211a04a8bfeb5647565955b376f35e2c731e627c3bd2feff1247ef2b7f89bd5ecc7fd3a1b65f40e63c4620b8440a331b321a282682de2dafab506c08bc98b7aebeb2dbabb5da494dcbd7e17afed7129bad4780bfe33e3c1b84e4c82ac24ae72b4751b2d35a7574fbf75f7e1370febf8414cf25bc28d4f6fa02fea37c3ff75fa71bfdefc62b30e82a0eeac74eacdadcdb9ebfecf067cd7af3b2b9d3a783fa86f7f7ebb7e37b55f67fce3b8beffe03e6555be4bf63fcaef550652d6e1f4866f0000000049454e44ae426082</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>fileNewAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>fileNew()</slot>
+    </connection>
+    <connection>
+        <sender>fileOpenAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>fileOpen()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>fileSave()</slot>
+    </connection>
+    <connection>
+        <sender>fileSaveAsAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>fileSaveAs()</slot>
+    </connection>
+    <connection>
+        <sender>filePrintAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>filePrint()</slot>
+    </connection>
+    <connection>
+        <sender>fileExitAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>fileExit()</slot>
+    </connection>
+    <connection>
+        <sender>editUndoAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>editUndo()</slot>
+    </connection>
+    <connection>
+        <sender>editRedoAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>editRedo()</slot>
+    </connection>
+    <connection>
+        <sender>editCutAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>editCut()</slot>
+    </connection>
+    <connection>
+        <sender>editCopyAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>editCopy()</slot>
+    </connection>
+    <connection>
+        <sender>editPasteAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>editPaste()</slot>
+    </connection>
+    <connection>
+        <sender>editFindAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>editFind()</slot>
+    </connection>
+    <connection>
+        <sender>helpIndexAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>helpIndex()</slot>
+    </connection>
+    <connection>
+        <sender>helpContentsAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>helpContents()</slot>
+    </connection>
+    <connection>
+        <sender>helpAboutAction</sender>
+        <signal>activated()</signal>
+        <receiver>MainForm</receiver>
+        <slot>helpAbout()</slot>
+    </connection>
+</connections>
+<signals>
+    <signal>windowsSignals()</signal>
+    <signal>windowsInstruments()</signal>
+</signals>
+<slots>
+    <slot>fileNew()</slot>
+    <slot>fileOpen()</slot>
+    <slot>fileSave()</slot>
+    <slot>fileSaveAs()</slot>
+    <slot>filePrint()</slot>
+    <slot>fileExit()</slot>
+    <slot>editUndo()</slot>
+    <slot>editRedo()</slot>
+    <slot>editCut()</slot>
+    <slot>editCopy()</slot>
+    <slot>editPaste()</slot>
+    <slot>editFind()</slot>
+    <slot>helpIndex()</slot>
+    <slot>helpContents()</slot>
+    <slot>helpAbout()</slot>
+    <slot>windowsSignals()</slot>
+    <slot>windowsInstruments()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
