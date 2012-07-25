@@ -3,9 +3,11 @@
 
 ##from scipy import eye, bmat, isscalar
 from types import IntType, LongType, ComplexType, FloatType
-from Numeric import transpose, array, reshape, zeros
-from LinearAlgebra import inverse
-from Matrix import Matrix as bmat
+#from Numeric import transpose, array, reshape, zeros
+from numpy import transpose, array, reshape, zeros, bmat
+#from LinearAlgebra import inverse
+from numpy.linalg.linalg import inv as inverse
+#from Matrix import Matrix as bmat
 
 
 def eye(size, typecode='d'):

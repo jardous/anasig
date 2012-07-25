@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from signals_base import *#SignalBase, Signal
-from Numeric import arange, array, sin, pi, Float
+#from Numeric import arange, array, sin, pi, Float
+from numpy import arange, array, sin, pi#, Float
 from types import *#IntType, StringType
 from random import gauss
 

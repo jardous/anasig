@@ -6,8 +6,9 @@
 from qt import *
 
 from types import ObjectType, IntType
-from Numeric import array, transpose
-from MLab import eye
+#from Numeric import array, transpose
+from numpy import array, transpose, eye
+#from MLab import eye
 import cPickle
 import os
 import gettext

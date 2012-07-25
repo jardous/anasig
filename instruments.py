@@ -12,7 +12,8 @@ from signals import *
 
 from string import split, lower
 from scipy.signal.signaltools import get_window
-from Numeric import array, arange, Float, transpose, resize, Float
+#from Numeric import array, arange, Float, transpose, resize, Float
+from numpy import array, arange, transpose, resize #, Float
 from matplotlib.numerix.mlab import zeros, eye, ones
 from scipy.signal import signaltools
 from anasigError import *

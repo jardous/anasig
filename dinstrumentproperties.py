@@ -4,7 +4,7 @@
 from globals import *
 from qt import *
 
-from Numeric import Float
+#from Numeric import Float
 
 def getShape(mx):
     """return shape (rows, cols) of list/array object

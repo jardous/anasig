@@ -8,13 +8,13 @@ from matplotlib import verbose
 from matplotlib.numerix import asarray, fromstring, UInt8, zeros, \
      where, transpose, nonzero, indices, ones, nx
 import matplotlib.numerix as numerix
-from matplotlib.cbook import is_string_like, enumerate, onetrue
+#from matplotlib.cbook import is_string_like, enumerate, onetrue
 from matplotlib.font_manager import fontManager
 from matplotlib.backend_bases import RendererBase, GraphicsContextBase, \
      FigureManagerBase, FigureCanvasBase, NavigationToolbar2, cursors
 from matplotlib._pylab_helpers import Gcf
 from matplotlib.figure import Figure
-from matplotlib.mathtext import math_parse_s_ft2font
+#from matplotlib.mathtext import math_parse_s_ft2font
 import qt
 
 backend_version = "0.9.1"

@@ -11,7 +11,8 @@ from matplotlib.figure import Figure
 
 from qt import *
 
-from Numeric import arange, sin, pi
+#from Numeric import arange, sin, pi
+from numpy import arange, sin, pi
 
 import os
 import sys

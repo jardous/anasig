@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 from globals import *
-from Numeric import arange, sin, pi, array, ones
+#from Numeric import arange, sin, pi, array, ones
+from numpy import arange, sin, pi, array, ones
 
 import os
 
